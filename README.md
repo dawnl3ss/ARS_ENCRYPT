@@ -16,3 +16,26 @@
 -> Decrypt a string :  
   
 ![](https://github.com/Neptune-Dev/ARS_SHELL_CRYPT/blob/main/img/php_decrypt.png)  
+
+-> All :  
+  
+![](https://github.com/Neptune-Dev/ARS_SHELL_CRYPT/blob/main/img/php_all.png)  
+  
+  
+### 📌 Python :  
+  
+-> Create instance :
+  
+![](https://github.com/Neptune-Dev/ARS_SHELL_CRYPT/blob/main/img/python_instance.png)  
+  
+-> Encrypt a string :  
+  
+![](https://github.com/Neptune-Dev/ARS_SHELL_CRYPT/blob/main/img/python_encrypt.png)  
+  
+-> Decrypt a string :  
+  
+![](https://github.com/Neptune-Dev/ARS_SHELL_CRYPT/blob/main/img/python_decrypt.png)  
+
+-> All :  
+  
+![](https://github.com/Neptune-Dev/ARS_SHELL_CRYPT/blob/main/img/python_all.png)  
