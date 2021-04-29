@@ -12,3 +12,7 @@
 -> Encrypt a string :  
   
 ![](https://github.com/Neptune-Dev/ARS_SHELL_CRYPT/blob/main/img/php_encrypt.png)  
+  
+-> Decrypt a string :  
+  
+![](https://github.com/Neptune-Dev/ARS_SHELL_CRYPT/blob/main/img/php_decrypt.png)  
