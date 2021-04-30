@@ -4,8 +4,8 @@
 🔐 ARS_SHELL_CRYPT contains 4 level of security and decrypted system.  
 
 
-[@Neptune](https://github.com/Neptune-Dev) : PHP, Python, TypeScript, Golang, C <br>
-[@Galzronn](https://github.com/Galzronn) : TypeScript, Julia, C++, Golang, C <br>
+[@Neptune](https://github.com/Neptune-Dev) : PHP, Python, TypeScript, Golang, C, Bash  
+[@Galzronn](https://github.com/Galzronn) : TypeScript, Julia, C++, Golang, C, Bash  
 [@MaXoooZ](https://github.com/max-xoo) : JavaScript  
   
 ### 📌 PHP :
