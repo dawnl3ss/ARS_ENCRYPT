@@ -5,8 +5,8 @@
 
 
 [@Neptune](https://github.com/Neptune-Dev) : PHP, Python, TypeScript, Golang  
-[@Galzronn](https://github.com/Galzronn) : TypeScript, Julia, C++, Golang  
-[@MaXoooZ](https://github.com/max-xoo) : JavaScript  
+[@Galzronn](https://github.com/Galzronn) : TypeScript, Julia, C++, Golang, Javascript
+[@MaXoooZ (Ty Galzron XdDdD)](https://github.com/max-xoo) : JavaScript  
   
 ### 📌 PHP :
 ```php
@@ -36,6 +36,19 @@ import { Encryption } from "./cryptage/Encryption";
 import { StandardSecurity } from "./standard/StandardSecurity";
 
 let encrypt = new Encryption("azerty", StandardSecurity.STANDARD_SEC_4);
+
+console.log(encrypt.str_encrypt());
+console.log(encrypt.str_decrypt());
+```
+  
+### 📌 Javascript :
+```js
+Object.defineProperty(exports, "__esModule", { value: true });
+
+var Encryption_1 = require("./cryptage/Encryption");
+var StandardSecurity_1 = require("./standard/StandardSecurity");
+
+var encrypt = new Encryption_1.Encryption("azerty", StandardSecurity_1.StandardSecurity.STANDARD_SEC_4);
 
 console.log(encrypt.str_encrypt());
 console.log(encrypt.str_decrypt());
