@@ -1,46 +1,42 @@
 # ARS_SHELL_CRYPT
 
 ⚒ ARS_SHELL_CRYPT is my own cryptage system, developped on all languages that I know.  
-🔐 ARS_SHELL_CRYPT contains 5 level of security and decrypted system.  
-  
-  
-[@Neptune](https://github.com/Neptune-Dev) : PHP, Python <br>
-[@Galzronn](https://github.com/Galzronn) : TypeScript, Julia, C++, Golang <br>
-[@MaXoooZ](https://github.com/max-xoo) : JavaScript
+🔐 ARS_SHELL_CRYPT contains 4 level of security and decrypted system.  
 
+
+[@Neptune](https://github.com/Neptune-Dev) : PHP, Python, TypeScript, Golang  
+[@Galzronn](https://github.com/Galzronn) : TypeScript, Julia, C++, Golang  
+[@MaXoooZ](https://github.com/max-xoo) : JavaScript  
+  
 ### 📌 PHP :
+```php
+<?php
 
--> Create instance :  
-  
-![](https://github.com/Neptune-Dev/ARS_SHELL_CRYPT/blob/main/img/php_instance.png)  
-  
--> Encrypt a string :  
-  
-![](https://github.com/Neptune-Dev/ARS_SHELL_CRYPT/blob/main/img/php_encrypt.png)  
-  
--> Decrypt a string :  
-  
-![](https://github.com/Neptune-Dev/ARS_SHELL_CRYPT/blob/main/img/php_decrypt.png)  
+require_once "cryptage/Encryption.php";
 
--> All :  
-  
-![](https://github.com/Neptune-Dev/ARS_SHELL_CRYPT/blob/main/img/php_all.png)  
-  
+$encrypt = new Encryption("string_to_encrypt", Encryption::STANDARD_SEC_1);
+echo $encrypt->str_encrypt() . "<br>";
+echo $encrypt->str_decrypt();
+
+?>
+```
   
 ### 📌 Python :  
-  
--> Create instance :
-  
-![](https://github.com/Neptune-Dev/ARS_SHELL_CRYPT/blob/main/img/python_instance.png)  
-  
--> Encrypt a string :  
-  
-![](https://github.com/Neptune-Dev/ARS_SHELL_CRYPT/blob/main/img/python_encrypt.png)  
-  
--> Decrypt a string :  
-  
-![](https://github.com/Neptune-Dev/ARS_SHELL_CRYPT/blob/main/img/python_decrypt.png)  
+```python
+from cryptage.Encryption import Encryption
 
--> All :  
+encrypt = Encryption("string_to_crypt", Encryption.STANDARD_SPACING_SEC_1)
+print(encrypt.str_encrypt())
+print(encrypt.str_decrypt())
+```
   
-![](https://github.com/Neptune-Dev/ARS_SHELL_CRYPT/blob/main/img/python_all.png)  
+### 📌 TypeScript :
+```typescript
+import { Encryption } from "./cryptage/Encryption";
+import { StandardSecurity } from "./standard/StandardSecurity";
+
+let encrypt = new Encryption("azerty", StandardSecurity.STANDARD_SEC_4);
+
+console.log(encrypt.str_encrypt());
+console.log(encrypt.str_decrypt());
+```
