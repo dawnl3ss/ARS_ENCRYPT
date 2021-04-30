@@ -5,7 +5,7 @@
   
   
 [@Neptune](https://github.com/Neptune-Dev) : PHP, Python <br>
-[@Galzronn](https://github.com/Galzronn) : TypeScript, Julia, C++
+[@Galzronn](https://github.com/Galzronn) : TypeScript, Julia, C++, Golang <br>
 [@MaXoooZ](https://github.com/max-xoo) : JavaScript
 
 ### 📌 PHP :
