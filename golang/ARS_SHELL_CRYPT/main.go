@@ -1,5 +1,1 @@
-package main
-
-func main() {
-  //J'ai juste crée ce fichier pour pouvoir get mon pkg et finir de dev
-}
+package ARS_SHELL_CRYPT
