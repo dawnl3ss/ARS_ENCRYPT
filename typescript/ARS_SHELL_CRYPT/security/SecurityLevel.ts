@@ -1,12 +1,16 @@
 import ARS_SHELL_CRYPT from "../cryptage/ARS_SHELL_CRYPT";
-import StandardList from "../standard/StandardList";
+import { CHAR_LIST } from "../standard/StandardList";
 import { Utils } from "../utils/Utils";
 
-export default class SecurityLevel extends ARS_SHELL_CRYPT implements StandardList {
+interface SecData {
+    spacing: number;
+    firstStrBreak: string;
+    secondStrBreak: string;
+}
 
-    public spacing: number;
-    public firstStrBreak: string;
-    public secondStrBreak: string;
+export default class SecurityLevel extends ARS_SHELL_CRYPT {
+
+    public sec_data: SecData;
 
     /**
      * Generate a string follow the Encryption level
@@ -16,7 +20,7 @@ export default class SecurityLevel extends ARS_SHELL_CRYPT implements StandardLi
         let sec_str = "`";
 
         for (let i = 0; i < sec_lvl * 10; i++) {
-            sec_str += StandardList.CHAR_LIST[Utils.mt_rand(0, this.count() - 1)];
+            sec_str += CHAR_LIST[Utils.mt_rand(0, this.count() - 1)];
         }
         return sec_str;
     }
@@ -26,8 +30,10 @@ export default class SecurityLevel extends ARS_SHELL_CRYPT implements StandardLi
      * @param sec_lvl
      */
     public serialize_sec_data(sec_lvl: number) {
-        this.spacing = sec_lvl * 10;
-        this.firstStrBreak = this.gen_sec_str(sec_lvl);
-        this.secondStrBreak = this.gen_sec_str(sec_lvl);
+        return this.sec_data = {
+            spacing: sec_lvl * 10,
+            firstStrBreak: this.gen_sec_str(sec_lvl),
+            secondStrBreak: this.gen_sec_str(sec_lvl),
+        }
     }
 }

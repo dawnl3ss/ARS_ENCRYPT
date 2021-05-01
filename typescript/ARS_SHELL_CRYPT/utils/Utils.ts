@@ -5,18 +5,14 @@ export class Utils {
      * @param min
      * @param max
      */
-    static mt_rand(min: number, max: number) {
-        let argc = arguments.length
-
-        if(argc === 0) {
-            min = 0
-            max = 2147483647
-        } else if(argc === 1) {
+    static mt_rand(min = 0, max = 2147483647) {
+        if(arguments.length === 1) {
             throw new Error("Warning: mt_rand() expects exactly 2 parameters, 1 given")
-        } else {
-            min = parseInt(String(min), 10)
-            max = parseInt(String(max), 10)
         }
+
+        min = parseInt(String(min), 10)
+        max = parseInt(String(max), 10)
+
         return Math.floor(Math.random() * (max - min + 1)) + min
     }
 
@@ -24,7 +20,7 @@ export class Utils {
      * String reverse
      * @param str
      */
-    static reverse = function(str: string) {
-        return str.split('').reverse().join('');
+    static reverse(str: string) {
+        return str.split("").reverse().join("");
     }
 }
