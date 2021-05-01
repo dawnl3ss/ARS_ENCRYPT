@@ -18,7 +18,7 @@ export class Utils {
      * String reverse
      * @param str
      */
-	static reverse(str: string): string {
+	public static reverse(str: string): string {
 		return [...str].reverse().join("");
 	}
 }
