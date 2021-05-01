@@ -1,7 +1,7 @@
-from standard.StrandardSpacing import StandardSpacing
+from standard.StandardSecurity import StandardSecurity
 
 
-class ARS_SHELL_CRYPT(StandardSpacing):
+class ARS_SHELL_CRYPT(StandardSecurity):
 
     METHOD_CRYPT = 0
     METHOD_DECRYPT = 1
