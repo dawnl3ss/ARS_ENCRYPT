@@ -11,16 +11,15 @@ class ARS_SHELL_CRYPT implements StandardList, StandardSecurity {
     /**
      * @param string $f_char
      *
-     * @return mixed|string
+     * @return string
      */
-    public function char_to_achar(string $f_char, int $method, int $_spacing){
+    public function char_to_achar(string $f_char, int $method, int $_spacing) : string {
         $n_char = "";
 
         if ($method === self::METHOD_CRYPT) {
             for ($i = 0; $i <= $this->count() - 1; $i++) {
                 if (self::CHAR_LIST[$i] === $f_char) {
                     if ($i >= $_spacing) {
-                        $find = false;
                         do {
                             if (isset(self::CHAR_LIST[$i + $_spacing])) {
                                 $n_char = self::CHAR_LIST[$i + $_spacing];
@@ -29,16 +28,15 @@ class ARS_SHELL_CRYPT implements StandardList, StandardSecurity {
                                 $n_char = self::CHAR_LIST[($i + $_spacing) - $this->count()];
                                 break;
                             }
-                        } while (!$find);
+                        } while (true);
                         break;
                     } elseif ($i < $_spacing) {
-                        $find = false;
                         do {
                             if (isset(self::CHAR_LIST[$i + $_spacing])) {
                                 $n_char = self::CHAR_LIST[$i + $_spacing];
                                 break;
                             }
-                        } while (!$find);
+                        } while (true);
                         break;
                     }
                 }
@@ -47,16 +45,14 @@ class ARS_SHELL_CRYPT implements StandardList, StandardSecurity {
             for ($i = 0; $i <= (int)$this->count() - 1; $i++) {
                 if (self::CHAR_LIST[$i] === $f_char) {
                     if ($i >= $_spacing) {
-                        $find = false;
                         do {
                             if (isset(self::CHAR_LIST[$i - $_spacing])) {
                                 $n_char = self::CHAR_LIST[$i - $_spacing];
                                 break;
                             }
-                        } while (!$find);
+                        } while (true);
                         break;
                     } elseif ($i < $_spacing) {
-                        $find = false;
                         do {
                             if (isset(self::CHAR_LIST[$i - $_spacing])) {
                                 $n_char = self::CHAR_LIST[$i - $_spacing];
@@ -65,7 +61,7 @@ class ARS_SHELL_CRYPT implements StandardList, StandardSecurity {
                                 $n_char = self::CHAR_LIST[($i - $_spacing) + $this->count()];
                                 break;
                             }
-                        } while (!$find);
+                        } while (true);
                         break;
                     }
                 }

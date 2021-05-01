@@ -13,8 +13,7 @@ class ARS_SHELL_CRYPT(StandardSecurity):
             for i in range(len(super().CHAR_LIST)):
                 if super().CHAR_LIST[i] == f_char:
                     if i >= _spacing:
-                        find = False
-                        while find == False:
+                        while True:
                             if i + _spacing in super().CHAR_LIST.keys():
                                 n_char = super().CHAR_LIST[i + _spacing]
                                 break
@@ -23,8 +22,7 @@ class ARS_SHELL_CRYPT(StandardSecurity):
                                 break
                         break
                     elif i < _spacing:
-                        find = False
-                        while find == False:
+                        while True:
                             if i + _spacing in super().CHAR_LIST.keys():
                                 n_char = super().CHAR_LIST[i + _spacing]
                                 break
@@ -33,15 +31,13 @@ class ARS_SHELL_CRYPT(StandardSecurity):
             for i in range(len(super().CHAR_LIST)):
                 if super().CHAR_LIST[i] == f_char:
                     if i >= _spacing:
-                        find = False
-                        while find == False:
+                        while True:
                             if i - _spacing in super().CHAR_LIST.keys():
                                 n_char = super().CHAR_LIST[i - _spacing]
                                 break
                         break
                     elif i < _spacing:
-                        find = False
-                        while find == False:
+                        while True:
                             if i - _spacing in super().CHAR_LIST.keys():
                                 n_char = super().CHAR_LIST[i - _spacing]
                                 break
