@@ -21,7 +21,7 @@ export class Encryption extends SecurityLevel {
 	/**
      * String Encryption
      */
-	public strEncrypt() : string {
+	public strEncrypt(): string {
 		let encrypt = "";
 		for (let i = 0; i < this.str.length; i++) {
 			encrypt += this.charToAchar(this.str[i], ArsShellCrypt.METHOD_CRYPT, this.secData.spacing);
