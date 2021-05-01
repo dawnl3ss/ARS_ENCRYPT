@@ -1,12 +1,12 @@
-import StandardList from "../standard/StandardList";
+import { CHAR_LIST } from "../standard/StandardList";
 
-export default class ARS_SHELL_CRYPT implements StandardList {
+export default class ARS_SHELL_CRYPT {
 
-    public static METHOD_CRYPT = 0;
-    public static METHOD_DECRYPT = 1;
+    public static readonly METHOD_CRYPT = 0;
+    public static readonly METHOD_DECRYPT = 1;
 
     public count() : number {
-        return Object.keys(StandardList.CHAR_LIST).length;
+        return Object.keys(CHAR_LIST).length;
     }
 
     /**
@@ -19,15 +19,15 @@ export default class ARS_SHELL_CRYPT implements StandardList {
 
         if(method === ARS_SHELL_CRYPT.METHOD_CRYPT) {
             for(let i = 0; i <= this.count() - 1; i++) {
-                if(StandardList.CHAR_LIST[i] === f_char) {
+                if(CHAR_LIST[i] === f_char) {
                     if(i >= _spacing) {
                         let find = false;
                         do {
-                            if(i + _spacing in Object.keys(StandardList.CHAR_LIST)) {
-                                n_char = StandardList.CHAR_LIST[i + _spacing];
+                            if(i + _spacing in Object.keys(CHAR_LIST)) {
+                                n_char = CHAR_LIST[i + _spacing];
                                 break;
-                            } else if((i + _spacing) - this.count() in Object.keys(StandardList.CHAR_LIST)) {
-                                n_char = StandardList.CHAR_LIST[(i + _spacing) - this.count()];
+                            } else if((i + _spacing) - this.count() in Object.keys(CHAR_LIST)) {
+                                n_char = CHAR_LIST[(i + _spacing) - this.count()];
                                 break;
                             }
                         } while(!find);
@@ -36,8 +36,8 @@ export default class ARS_SHELL_CRYPT implements StandardList {
                     } else if(i < _spacing) {
                         let find = false;
                         do {
-                            if(i + _spacing in Object.keys(StandardList.CHAR_LIST)) {
-                                n_char = StandardList.CHAR_LIST[i + _spacing];
+                            if(i + _spacing in Object.keys(CHAR_LIST)) {
+                                n_char = CHAR_LIST[i + _spacing];
                                 break;
                             }
                         } while(!find)
@@ -47,12 +47,12 @@ export default class ARS_SHELL_CRYPT implements StandardList {
             }
         } else if(method === ARS_SHELL_CRYPT.METHOD_DECRYPT) {
             for(let i = 0; i <= this.count() - 1; i++) {
-                if(StandardList.CHAR_LIST[i] === f_char) {
+                if(CHAR_LIST[i] === f_char) {
                     if(i >= _spacing) {
                         let find = false;
                         do {
-                            if(i - _spacing in Object.keys(StandardList.CHAR_LIST)) {
-                                n_char = StandardList.CHAR_LIST[i - _spacing];
+                            if(i - _spacing in Object.keys(CHAR_LIST)) {
+                                n_char = CHAR_LIST[i - _spacing];
                                 break;
                             }
                         } while(!find);
@@ -61,11 +61,11 @@ export default class ARS_SHELL_CRYPT implements StandardList {
                     } else if(i < _spacing) {
                         let find = false;
                         do {
-                            if(i - _spacing in Object.keys(StandardList.CHAR_LIST)) {
-                                n_char = StandardList.CHAR_LIST[i - _spacing];
+                            if(i - _spacing in Object.keys(CHAR_LIST)) {
+                                n_char = CHAR_LIST[i - _spacing];
                                 break;
-                            } else if((i - _spacing) + this.count() in Object.keys(StandardList.CHAR_LIST)) {
-                                n_char = StandardList.CHAR_LIST[i - _spacing + this.count()];
+                            } else if((i - _spacing) + this.count() in Object.keys(CHAR_LIST)) {
+                                n_char = CHAR_LIST[i - _spacing + this.count()];
                                 break;
                             }
                         } while(!find)

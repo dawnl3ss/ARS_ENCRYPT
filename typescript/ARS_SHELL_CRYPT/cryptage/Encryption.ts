@@ -27,12 +27,13 @@ export class Encryption extends SecurityLevel {
      * String Encryption
      */
     public str_encrypt() : string {
+        let sec = this.sec_data;
         let encrypt = "";
 
         for (let i = 0; i < this.str.length; i++) {
-            encrypt += this.char_to_achar(this.str[i], ARS_SHELL_CRYPT.METHOD_CRYPT, this.spacing);
+            encrypt += this.char_to_achar(this.str[i], ARS_SHELL_CRYPT.METHOD_CRYPT, sec.spacing);
         }
-        this.encrypted = encrypt + this.firstStrBreak + Utils.reverse(encrypt) + this.secondStrBreak;
+        this.encrypted = encrypt + sec.firstStrBreak + Utils.reverse(encrypt) + sec.secondStrBreak;
 
         return this.encrypted;
     }
@@ -41,11 +42,12 @@ export class Encryption extends SecurityLevel {
      * String decryption
      */
     public str_decrypt() : string {
+        let sec = this.sec_data;
         let hash = this.encrypted.split("`")[0]; //explode the array
         let decrypt = "";
 
         for(let i = 0; i < hash.length; i++) {
-            decrypt += this.char_to_achar(hash[i], ARS_SHELL_CRYPT.METHOD_DECRYPT, this.spacing); //decrypt the string
+            decrypt += this.char_to_achar(hash[i], ARS_SHELL_CRYPT.METHOD_DECRYPT, sec.spacing); //decrypt the string
         }
 
         return this.decrypted = decrypt;
