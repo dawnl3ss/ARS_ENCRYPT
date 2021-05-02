@@ -1,6 +1,6 @@
 import SecurityLevel from "../security/SecurityLevel";
 import ARS_SHELL_CRYPT from "./ARS_SHELL_CRYPT";
-import { Utils } from "../utils/Utils";
+import { reverse } from "../utils/Utils";
 
 export class Encryption extends SecurityLevel {
 
@@ -33,7 +33,7 @@ export class Encryption extends SecurityLevel {
         for (let i = 0; i < this.str.length; i++) {
             encrypt += this.char_to_achar(this.str[i], ARS_SHELL_CRYPT.METHOD_CRYPT, sec.spacing);
         }
-        this.encrypted = encrypt + sec.firstStrBreak + Utils.reverse(encrypt) + sec.secondStrBreak;
+        this.encrypted = encrypt + sec.firstStrBreak + reverse(encrypt) + sec.secondStrBreak;
 
         return this.encrypted;
     }
