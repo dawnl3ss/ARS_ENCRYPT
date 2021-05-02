@@ -1,8 +1,8 @@
 import ARS_SHELL_CRYPT from "../cryptage/ARS_SHELL_CRYPT";
 import { CHAR_LIST } from "../standard/StandardList";
-import { Utils } from "../utils/Utils";
+import { mt_rand } from "../utils/Utils";
 
-interface SecData {
+interface ISecData {
     spacing: number;
     firstStrBreak: string;
     secondStrBreak: string;
@@ -10,7 +10,7 @@ interface SecData {
 
 export default class SecurityLevel extends ARS_SHELL_CRYPT {
 
-    public sec_data: SecData;
+    public sec_data: ISecData;
 
     /**
      * Generate a string follow the Encryption level
@@ -20,7 +20,7 @@ export default class SecurityLevel extends ARS_SHELL_CRYPT {
         let sec_str = "`";
 
         for (let i = 0; i < sec_lvl * 10; i++) {
-            sec_str += CHAR_LIST[Utils.mt_rand(0, this.count() - 1)];
+            sec_str += CHAR_LIST[mt_rand(0, this.count() - 1)];
         }
         return sec_str;
     }
