@@ -132,7 +132,7 @@
 
             <div class="copyright">
                 <div class="container">
-                    <p> Copyright &copy; ARS Crypter 2021 <br> Fully developper by Neptune :) </p>
+                    <p> Copyright &copy; ARS Crypter 2021 <br> Fully developped by Neptune :) </p>
                 </div>
             </div>
         </footer>
