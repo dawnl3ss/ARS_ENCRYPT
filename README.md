@@ -15,7 +15,7 @@
 require_once "cryptage/Encryption.php";
 
 $encrypt = new Encryption("string_to_encrypt", Encryption::STANDARD_SEC_1);
-echo $encrypt->str_encrypt() . "<br>";
+echo $encrypt->str_encrypt();
 echo $encrypt->str_decrypt();
 
 ?>
