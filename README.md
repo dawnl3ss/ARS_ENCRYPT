@@ -1,7 +1,7 @@
 # ARS_SHELL_CRYPT
 
 ⚒ ARS_SHELL_CRYPT is my own cryptage system, developped on all languages that I know.  
-🔐 ARS_SHELL_CRYPT contains 4 level of security and decrypted system.  
+🔐 ARS_SHELL_CRYPT contains 5 level of security and decrypted system (the 5th is indecryptable).  
 
 
 [@Neptune](https://github.com/Neptune-Dev) : PHP, Python, TypeScript, Golang, C, Bash  
