@@ -12,8 +12,15 @@ class SecurityLevel(ARS_SHELL_CRYPT):
         return sec_str
 
     def serialize_sec_data(self, sec_lvl):
-        return {
-            "spacing": sec_lvl * 10,
-            "first_str_break": self.gen_sec_string(sec_lvl),
-            "second_str_break": self.gen_sec_string(sec_lvl)
-        }
+        if sec_lvl <= 4:
+            return {
+                "spacing": sec_lvl * 10,
+                "first_str_break": self.gen_sec_string(sec_lvl),
+                "second_str_break": self.gen_sec_string(sec_lvl)
+            }
+        else:
+            return {
+                "spacing": sec_lvl * 9,
+                "first_str_break": self.gen_sec_string(sec_lvl),
+                "second_str_break": self.gen_sec_string(sec_lvl)
+            }

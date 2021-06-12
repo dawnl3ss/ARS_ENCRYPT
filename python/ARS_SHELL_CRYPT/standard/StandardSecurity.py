@@ -7,3 +7,6 @@ class StandardSecurity(StandardList):
     STANDARD_SEC_2 = 2
     STANDARD_SEC_3 = 3
     STANDARD_SEC_4 = 4
+
+    # indéchriffrable
+    STANDARD_SEC_5 = 5
