@@ -13,11 +13,19 @@ class SecurityLevel extends ARS_SHELL_CRYPT {
      * @return array
      */
     public function serialize_sec_data(int $sec_lvl) : array {
-        return $this->sec_data = [
-            "spacing" => $sec_lvl * 10,
-            "first_str_break" => $this->gen_sec_str($sec_lvl),
-            "second_str_break" => $this->gen_sec_str($sec_lvl),
-        ];
+        if ($sec_lvl <= 4){
+            return $this->sec_data = [
+                "spacing" => $sec_lvl * 10,
+                "first_str_break" => $this->gen_sec_str($sec_lvl),
+                "second_str_break" => $this->gen_sec_str($sec_lvl),
+            ];
+        } else {
+            return $this->sec_data = [
+                "spacing" => $sec_lvl * 9,
+                "first_str_break" => $this->gen_sec_str($sec_lvl),
+                "second_str_break" => $this->gen_sec_str($sec_lvl),
+            ];
+        }
 
     }
 

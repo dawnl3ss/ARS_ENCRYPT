@@ -7,4 +7,7 @@ interface StandardSecurity {
     public const STANDARD_SEC_3 = 3;
     public const STANDARD_SEC_4 = 4;
 
+    // indéchiffrable
+    public const STANDARD_SEC_5 = 5;
+
 }

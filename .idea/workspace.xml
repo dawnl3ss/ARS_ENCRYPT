@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b18b07c0-52ad-4398-b09d-39ec2d6cbe9e" name="Default Changelist" comment="" />
+    <list default="true" id="c8312a06-ea31-4c93-9a65-530773ac50bc" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,10 +10,7 @@
   <component name="ComposerSettings">
     <execution />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectId" id="1s9QMHUs0Nd6C33ZA039MYinL4b" />
+  <component name="ProjectId" id="1sa1Yrr3X6QDcSaV2SVl0dTr6N8" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -22,17 +19,40 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b18b07c0-52ad-4398-b09d-39ec2d6cbe9e" name="Default Changelist" comment="" />
-      <created>1620282284475</created>
+      <changelist id="c8312a06-ea31-4c93-9a65-530773ac50bc" name="Default Changelist" comment="" />
+      <created>1621095940279</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1620282284475</updated>
-      <workItem from="1620282291523" duration="476000" />
+      <updated>1621095940279</updated>
+      <workItem from="1621095942608" duration="208000" />
+      <workItem from="1621321125641" duration="72000" />
+      <workItem from="1621720825503" duration="911000" />
+      <workItem from="1621721763954" duration="594000" />
+      <workItem from="1621723232032" duration="1366000" />
+      <workItem from="1621724702603" duration="345000" />
+      <workItem from="1621787864031" duration="5152000" />
+      <workItem from="1621809284891" duration="99000" />
+      <workItem from="1621853512419" duration="1559000" />
+      <workItem from="1621897728269" duration="2647000" />
+      <workItem from="1622029057650" duration="1541000" />
+      <workItem from="1622043074515" duration="23000" />
+      <workItem from="1622284290632" duration="1991000" />
+      <workItem from="1622315601054" duration="263000" />
+      <workItem from="1622399821849" duration="3000" />
+      <workItem from="1622401227632" duration="897000" />
+      <workItem from="1622529878859" duration="16000" />
+      <workItem from="1622730034878" duration="2308000" />
+      <workItem from="1622750819512" duration="5839000" />
+      <workItem from="1622785418673" duration="1105000" />
+      <workItem from="1622818329413" duration="4294000" />
+      <workItem from="1622842379543" duration="197000" />
+      <workItem from="1623532332839" duration="1044000" />
     </task>
     <servers />
   </component>

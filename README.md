@@ -3,11 +3,10 @@
 ⚒ ARS_SHELL_CRYPT is my own cryptage system, developped on all languages that I know.  
 🔐 ARS_SHELL_CRYPT contains 4 level of security and decrypted system.  
 
-🪐 Web API is now available !
-
 
 [@Neptune](https://github.com/Neptune-Dev) : PHP, Python, TypeScript, Golang, C, Bash  
-[@Mitsuaaki](https://github.com/Mitsuaaki) : TypeScript, Julia, C++, Golang, C, Bash  
+[@Galzronn](https://github.com/Galzronn) : TypeScript, Julia, C++, Golang, C, Bash  
+[@MaXoooZ](https://github.com/max-xoo) : JavaScript  
   
 ### 📌 PHP :
 ```php
