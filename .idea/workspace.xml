@@ -27,7 +27,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -87,7 +87,15 @@
       <workItem from="1623532332839" duration="1714000" />
       <workItem from="1623534197025" duration="239000" />
       <workItem from="1623611035548" duration="17000" />
-      <workItem from="1623665000245" duration="495000" />
+      <workItem from="1623665000245" duration="1846000" />
+      <workItem from="1623666872518" duration="23000" />
+      <workItem from="1624834320755" duration="785000" />
+      <workItem from="1624874975183" duration="1453000" />
+      <workItem from="1624906651775" duration="624000" />
+      <workItem from="1624997060081" duration="890000" />
+      <workItem from="1625013219118" duration="329000" />
+      <workItem from="1625152100949" duration="1490000" />
+      <workItem from="1627403672184" duration="1277000" />
     </task>
     <servers />
   </component>

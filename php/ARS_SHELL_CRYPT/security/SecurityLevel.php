@@ -16,7 +16,7 @@ class SecurityLevel extends ARS_SHELL_CRYPT {
         return $this->sec_data = [
             "spacing" => $sec_lvl * 5,
             "first_str_break" => $this->gen_sec_str($sec_lvl),
-            "second_str_break" => $this->gen_sec_str($sec_lvl),
+            "second_str_break" => $this->gen_sec_str($sec_lvl)
         ];
     }
 
