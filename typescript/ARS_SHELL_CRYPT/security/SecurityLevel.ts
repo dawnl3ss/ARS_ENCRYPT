@@ -31,7 +31,7 @@ export default class SecurityLevel extends ARS_SHELL_CRYPT {
      */
     public serialize_sec_data(sec_lvl: number) {
         return this.sec_data = {
-            spacing: sec_lvl * 10,
+            spacing: sec_lvl * 5,
             firstStrBreak: this.gen_sec_str(sec_lvl),
             secondStrBreak: this.gen_sec_str(sec_lvl),
         }
