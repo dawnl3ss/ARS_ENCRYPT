@@ -24,7 +24,7 @@ Request result form : {"hash":"...","string":"..."}
 
 require_once "cryptage/Encryption.php";
 
-$encrypt = new Encryption("string_to_encrypt", Encryption::STANDARD_SEC_1);
+$encrypt = new Encryption("...", Encryption::STANDARD_SEC_1);
 echo $encrypt->str_encrypt();
 echo $encrypt->str_decrypt();
 
@@ -35,7 +35,7 @@ echo $encrypt->str_decrypt();
 ```python
 from cryptage.Encryption import Encryption
 
-encrypt = Encryption("string_to_crypt", Encryption.STANDARD_SEC_1)
+encrypt = Encryption("...", Encryption.STANDARD_SEC_1)
 print(encrypt.str_encrypt())
 print(encrypt.str_decrypt())
 ```
@@ -45,7 +45,7 @@ print(encrypt.str_decrypt())
 import { Encryption } from "./cryptage/Encryption";
 import { StandardSecurity } from "./standard/StandardSecurity";
 
-let encrypt = new Encryption("string_to_encrypt", StandardSecurity.STANDARD_SEC_1);
+let encrypt = new Encryption("...", StandardSecurity.STANDARD_SEC_1);
 console.log(encrypt.str_encrypt());
 console.log(encrypt.str_decrypt());
 ```
