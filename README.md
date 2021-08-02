@@ -1,12 +1,23 @@
 # ARS_SHELL_CRYPT
 
 ⚒ ARS_SHELL_CRYPT is my own cryptage system, developped on all languages that I know.  
-🔐 ARS_SHELL_CRYPT contains 5 level of security and decrypted system (the 5th is indecryptable).  
+🔐 ARS_SHELL_CRYPT contains 5 level of security and decrypted system (5th is indecryptable).  
 
 
-[@Neptune](https://github.com/Neptune-Dev) : PHP, Python, TypeScript, Golang, C, Bash  
-[@Galzronn](https://github.com/Galzronn) : TypeScript, Julia, C++, Golang, C, Bash  
+[@Neptune](https://github.com/Neptune-Dev) : PHP, Python, TypeScript  
+[@Galzronn](https://github.com/Galzronn) : TypeScript
   
+### 📌 Web API :
+```
+Request for encryption :  
+-> http://188.165.33.34/api/json/encrypt.php?string=...&security=...  
+Request result form : {"string":"...","hash":"..."}  
+  
+Request for decryption :  
+-> http://188.165.33.34/api/json/decrypt.php?hash=...&security=...  
+Request result form : {"hash":"...","string":"..."}
+```
+
 ### 📌 PHP :
 ```php
 <?php
