@@ -6,11 +6,6 @@ import (
 	"github.com/Neptune-IT/ARS_SHELL_CRYPT/security"
 )
 
-type Encrypter struct {
-	Str           string
-	SecurityLevel int
-}
-
 func Encrypt(str string, security security.SecurityLevel) string {
 	newStr := ""
 	for _, i := range str {
