@@ -51,7 +51,7 @@ console.log(encrypt.str_encrypt());
 console.log(encrypt.str_decrypt());
 ```
   
-### 📌 TypeScript :
+### 📌 Golang :
 ```golang
 encrypt := cryptage.Encrypt("test", security.STANDARD_SEC_1)
 decrypt := cryptage.Decrypt(encrypt, security.STANDARD_SEC_1)
