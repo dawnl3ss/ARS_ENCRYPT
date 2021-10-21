@@ -3,7 +3,7 @@
 include("./standard/StandardList.php");
 include("./standard/StandardSecurity.php");
 
-class HashAlgorythm implements StandardSecurity, StandardList {
+abstract class HashAlgorythm implements StandardSecurity, StandardList {
 
     /**
      * @return int

@@ -13,6 +13,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="ProjectId" id="1zpeyZSe3F4QNZRzlAtNWO1wabz" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -38,7 +39,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1634849712511</updated>
-      <workItem from="1634849714233" duration="3559000" />
+      <workItem from="1634849714233" duration="4461000" />
     </task>
     <servers />
   </component>
