@@ -17,7 +17,7 @@ class SecurityHandler extends HashAlgorythm {
     }
 
     /**
-     * @param int $sec_lvl
+     * @param int $sec
      *
      * @return string
      */
