@@ -17,7 +17,7 @@ class CipherCrypt extends SecurityHandler {
         $this->plaintext = $plaintext;
         $this->sec = $sec;
         $this->crypt_data = $crypt_data;
-        $this->serialize_data($sec);
+        $this->serialize_data($sec, strlen($plaintext));
     }
 
     /**
@@ -30,7 +30,7 @@ class CipherCrypt extends SecurityHandler {
         for ($i = 0; $i < strlen($this->plaintext); $i++){
             $encrypt .= $this->hash_char($this->plaintext[$i], $sec["_"]);
         }
-        return $this->crypt_data["encrypted"] = $encrypt . $sec["f_break"] . $sec["s_break"];
+        return $this->crypt_data["encrypted"] = $encrypt . $sec["add"] . $sec["f_break"] . $sec["s_break"];
     }
 
     /**
@@ -38,7 +38,7 @@ class CipherCrypt extends SecurityHandler {
      */
     public function decrypt() : string {
         $sec = $this->sec_data;
-        $hash = explode(".", $this->crypt_data["encrypted"])[0];
+        $hash = explode("`", $this->crypt_data["encrypted"])[0];
         $decrypt = "";
 
         for ($i = 0; $i < strlen($hash); $i++){
