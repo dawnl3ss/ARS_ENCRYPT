@@ -11,12 +11,12 @@
 ### 📌 Web API :
 ```
 Request for encryption :  
--> http://188.165.33.34/api/json/encrypt.php?string=...&security=...  
-Request result form : {"string":"...","hash":"..."}  
+-> https://neptune-it.xyz/projects/website/ars-crypter/api/json/encrypt.php?string=test&security=1  
+Request result form : {"string":"test","hash":"..."}  
   
 Request for decryption :  
--> http://188.165.33.34/api/json/decrypt.php?hash=...&security=...  
-Request result form : {"hash":"...","string":"..."}
+-> https://neptune-it.xyz/projects/website/ars-crypter/api/json/decrypt.php?hash=...&security=1  
+Request result form : {"hash":"...","string":"test"}
 ```
 
 ### 📌 PHP :
