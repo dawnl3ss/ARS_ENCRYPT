@@ -38,7 +38,7 @@ class SecurityHandler extends HashAlgorythm {
      * @return string
      */
     public function gen_add_string(int $sec, int $plaintext_lght) : string {
-        $str = "`";
+        $str = ".";
 
         for ($i = 0; $i < ($sec * 10) - $plaintext_lght; $i++){
             $str .= self::CHAR_LIST[mt_rand(0, $this->count() - 1)];

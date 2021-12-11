@@ -38,7 +38,7 @@ class CipherCrypt extends SecurityHandler {
      */
     public function decrypt() : string {
         $sec = $this->sec_data;
-        $hash = explode("`", $this->crypt_data["encrypted"])[0];
+        $hash = explode(".", $this->crypt_data["encrypted"])[0];
         $decrypt = "";
 
         for ($i = 0; $i < strlen($hash); $i++){
