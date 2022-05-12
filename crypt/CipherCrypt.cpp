@@ -1,4 +1,6 @@
-class CipherCrypt {
+#include "HashAlgorythm.cpp"
+
+class CipherCrypt : public HashAlgorythm {
 
 private:
     std::string
@@ -16,7 +18,7 @@ public:
     }
 
     int get_sec(){
-        return sec;
+        return this->sec;
     }
 
     std::string encrypt(){
