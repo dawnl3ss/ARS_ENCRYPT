@@ -20,9 +20,11 @@ public:
 
     string encrypt(){
         //TODO
+        return "";
     }
 
     string decrypt(){
         //TODO
+        return "";
     }
 };

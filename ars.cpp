@@ -1,12 +1,14 @@
 #include <iostream>
 #include "crypt/CipherCrypt.cpp"
-#include "standard/StandardList.cpp"
+#include "standard/StandardSecurity.cpp"
 using namespace std;
 
 int main() {
     CipherCrypt cipher {"test", 1, "azeaezae", "test"};
-    struct StandardList list;
-    cout << list.CHAR_LIST[0];
+    struct StandardSecurity sec;
+    
+    cout << sec.STANDARD_SEC_1 << endl;
+    
     return 0;
 }
 
