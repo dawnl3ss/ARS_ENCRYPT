@@ -1,13 +1,10 @@
 #include <iostream>
 #include "crypt/CipherCrypt.cpp"
-#include "standard/StandardSecurity.cpp"
-using namespace std;
 
 int main() {
-    CipherCrypt cipher {"test", 1, "azeaezae", "test"};
-    struct StandardSecurity sec;
+    CipherCrypt cipher {"test", 2, "azeaezae", "test"};
     
-    cout << sec.STANDARD_SEC_1 << endl;
+    std::cout << cipher.get_sec() << std::endl;
     
     return 0;
 }

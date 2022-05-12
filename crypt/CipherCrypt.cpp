@@ -1,29 +1,30 @@
-using namespace std;
-
 class CipherCrypt {
 
 private:
-    string plaintext = "";
+    std::string
+        plaintext = "",
+        encrypted = "",
+        decrypted = "";
     int sec = 0;
-    string encrypted = "";
-    string decrypted = "";
 
 public:
-    CipherCrypt(string plaintext, int sec, string encrypted = "", string decrypted = ""){
+    CipherCrypt(std::string plaintext, int sec, std::string encrypted = "", std::string decrypted = ""){
         this->plaintext = plaintext;
         this->sec = sec;
         this->encrypted = encrypted;
         this->decrypted = decrypted;
     }
 
-    int get_sec(){ return sec; }
+    int get_sec(){
+        return sec;
+    }
 
-    string encrypt(){
+    std::string encrypt(){
         //TODO
         return "";
     }
 
-    string decrypt(){
+    std::string decrypt(){
         //TODO
         return "";
     }
