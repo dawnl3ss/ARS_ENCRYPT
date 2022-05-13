@@ -2,7 +2,7 @@
 
 class HashAlgorithm {
 
-private:
+protected:
     struct StandardList list;
 
 public:
