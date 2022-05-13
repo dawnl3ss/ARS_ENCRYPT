@@ -22,11 +22,10 @@ public:
     }
 
     std::string encrypt(){
-        return this->hash_char("9", 5);
+        return this->hash_char("a", 5);
     }
 
     std::string decrypt(){
-        //TODO
-        return "";
+        return this->unhash_char("C", 5);
     }
 };

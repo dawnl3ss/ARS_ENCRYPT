@@ -3,9 +3,9 @@
 
 int main() {
     CipherCrypt *cipher = new CipherCrypt("test", 2, "azeaezae", "test");
-    struct StandardList list;
 
     std::cout << cipher->encrypt() << std::endl;
+    std::cout << cipher->decrypt() << std::endl;
 
     return 0;
 }
