@@ -1,6 +1,6 @@
-#include "HashAlgorythm.cpp"
+#include "HashAlgorithm.cpp"
 
-class CipherCrypt : public HashAlgorythm {
+class CipherCrypt : public HashAlgorithm {
 
 private:
     std::string
@@ -22,8 +22,7 @@ public:
     }
 
     std::string encrypt(){
-        //TODO
-        return "";
+        return this->hash_char("9", 5);
     }
 
     std::string decrypt(){

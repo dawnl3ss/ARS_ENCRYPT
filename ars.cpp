@@ -2,10 +2,11 @@
 #include "crypt/CipherCrypt.cpp"
 
 int main() {
-    CipherCrypt cipher {"test", 2, "azeaezae", "test"};
-    
-    std::cout << cipher.get_sec() << std::endl;
-    
+    CipherCrypt *cipher = new CipherCrypt("test", 2, "azeaezae", "test");
+    struct StandardList list;
+
+    std::cout << cipher->encrypt() << std::endl;
+
     return 0;
 }
 
