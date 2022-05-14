@@ -15,8 +15,8 @@ private:
 
 public:
     CipherCrypt(std::string plaintext, int sec, std::string encrypted, std::string decrypted);
-    std::string encrypt() const;
-    std::string decrypt() const;
+    std::string encrypt();
+    std::string decrypt();
 };
 
 #endif
