@@ -5,7 +5,7 @@ CipherCrypt::CipherCrypt(std::string plaintext, int sec, std::string encrypted, 
     sec(sec),
     encrypted(encrypted),
     decrypted(decrypted)
-{}
+{ this->serialize_data(sec, plaintext.length()); }
 
 std::string CipherCrypt::encrypt(){
     std::string encrypt_s = "";
