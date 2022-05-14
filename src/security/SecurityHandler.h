@@ -18,5 +18,5 @@ public:
     std::string gen_add_string(int sec, int plaintext_lght);
 };
 
-
 #endif
+

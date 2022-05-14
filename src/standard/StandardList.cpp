@@ -18,3 +18,4 @@ public:
         return CHAR_LIST.size();
     }
 };
+

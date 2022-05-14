@@ -20,7 +20,7 @@ std::string SecurityHandler::gen_random_string(int sec, int multiplier){
     return str;
 }
 
-std::string SecurityHandler::gen_add_string(int sec, int plaintext_lght) {
+std::string SecurityHandler::gen_add_string(int sec, int plaintext_lght){
     std::string str = ".";
 
     for (int i = 0; i < (sec * 10) - plaintext_lght; i++) {
