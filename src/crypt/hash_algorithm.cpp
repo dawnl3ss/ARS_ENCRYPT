@@ -1,6 +1,6 @@
-#include "HashAlgorithm.hpp"
+#include "hash_algorithm.h"
 
-std::string HashAlgorithm::hash_char(std::string f_char, int _s){
+std::string hash_algorithm::hash_char(std::string f_char, int _s){
     std::string n_char = "";
 
     for (int i = 0; i <= this->list.get_size() - 1; i++){
@@ -30,7 +30,7 @@ std::string HashAlgorithm::hash_char(std::string f_char, int _s){
     return n_char;
 }
 
-std::string HashAlgorithm::unhash_char(std::string r_char, int _s){
+std::string hash_algorithm::unhash_char(std::string r_char, int _s){
     std::string n_char = "";
 
     for (int i = 0; i <= this->list.get_size() - 1; i++){

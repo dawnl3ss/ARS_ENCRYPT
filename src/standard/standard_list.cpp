@@ -1,7 +1,7 @@
 #include <iostream>
 #include <map>
 
-struct StandardList {
+struct standard_list {
 
 public:
     std::map<int, std::string> CHAR_LIST = {

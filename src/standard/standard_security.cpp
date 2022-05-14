@@ -1,4 +1,4 @@
-struct StandardSecurity {
+struct standard_security {
 
     int STANDARD_SEC_1 = 1;
     int STANDARD_SEC_2 = 2;

@@ -1,9 +1,9 @@
-#ifndef ARS_SHELL_CRYPT_SECURITYHANDLER_H
-#define ARS_SHELL_CRYPT_SECURITYHANDLER_H
+#ifndef ARS_SHELL_CRYPT_SECURITY_HANDLER_H
+#define ARS_SHELL_CRYPT_SECURITY_HANDLER_H
 
-#include "../crypt/HashAlgorithm.cpp"
+#include "../crypt/hash_algorithm.cpp"
 
-class SecurityHandler : public HashAlgorithm {
+class security_handler : public hash_algorithm {
 
 public:
     std::string
