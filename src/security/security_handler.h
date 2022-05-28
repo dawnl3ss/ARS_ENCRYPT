@@ -14,8 +14,7 @@ public:
 
 public:
     void serialize_data(int sec, int plaintext_lght);
-    std::string gen_random_string(int sec, int multiplier);
-    std::string gen_add_string(int sec, int plaintext_lght);
+    std::string gen_random_string(int plaintext_lght, int multiplier);
 };
 
 #endif
