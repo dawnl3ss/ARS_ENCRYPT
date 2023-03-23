@@ -3,7 +3,7 @@
 #include <sstream>
 #include <utility>
 
-std::vector<std::string> explode(std::string const & s, char delim){
+std::vector<std::string> split(std::string const & s, char delim){
     std::vector<std::string> result;
     std::istringstream iss(s);
 

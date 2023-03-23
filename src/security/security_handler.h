@@ -1,7 +1,7 @@
-#ifndef ARS_SHELL_CRYPT_SECURITY_HANDLER_H
-#define ARS_SHELL_CRYPT_SECURITY_HANDLER_H
+#ifndef ARS_ENCRYPT_SECURITY_HANDLER_H
+#define ARS_ENCRYPT_SECURITY_HANDLER_H
 
-#include "../crypt/hash_algorithm.cpp"
+#include "../encrypt/hash_algorithm.cpp"
 
 class security_handler : public hash_algorithm {
 

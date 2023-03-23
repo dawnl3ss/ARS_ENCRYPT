@@ -3,7 +3,7 @@
 
 int main(){
     // Test encrypt :
-    std::string encrypt_text = encrypt("password_test", security.STANDARD_SEC_6);
+    std::string encrypt_text = encrypt("azerty123", security.STANDARD_SEC_6);
     std::cout << encrypt_text << std::endl;
 
     // Test decrypt :
